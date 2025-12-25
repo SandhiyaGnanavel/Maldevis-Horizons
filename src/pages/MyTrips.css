@@ -1,0 +1,131 @@
+
+.mytrips-container {
+  max-width: 800px;
+  margin: 120px auto; 
+  padding: 60px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.mytrips-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.trip-card {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fefefe;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.trip-card h3 {
+  margin-bottom: 8px;
+  color: #2563eb;
+}
+
+.trip-card p {
+  margin: 4px 0;
+}
+
+.trip-card h4 {
+  margin-top: 10px;
+  color: #111827;
+}
+
+.delete-btn {
+  margin-top: 15px;
+  padding: 8px 14px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+.no-trips {
+  text-align: center;
+  margin-top: 50px;
+  color: #555;
+}
+@media (max-width: 480px) {
+  .mytrips-container {
+    margin: 80px 15px;
+    padding: 20px;
+  }
+
+  .mytrips-container h1 {
+    font-size: 24px;
+  }
+
+  .trip-card {
+    padding: 15px;
+  }
+
+  .trip-card h3 {
+    font-size: 16px;
+  }
+
+  .trip-card p {
+    font-size: 14px;
+  }
+
+  .trip-card h4 {
+    font-size: 15px;
+  }
+
+  .delete-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .no-trips {
+    font-size: 18px;
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .mytrips-container {
+    margin: 100px 30px;
+    padding: 40px;
+  }
+
+  .mytrips-container h1 {
+    font-size: 28px;
+  }
+
+  .trip-card h3 {
+    font-size: 18px;
+  }
+
+  .trip-card p {
+    font-size: 15px;
+  }
+
+  .delete-btn {
+    padding: 9px 16px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mytrips-container {
+    margin: 120px auto;
+    padding: 50px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .mytrips-container {
+    margin: 125px auto;
+    padding: 60px;
+  }
+}

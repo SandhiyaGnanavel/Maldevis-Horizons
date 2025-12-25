@@ -1,0 +1,173 @@
+.planner-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #fefefe;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.planner-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111827;
+}
+
+.planner-section {
+  margin-bottom: 20px;
+}
+
+.planner-section label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.planner-section select,
+.planner-section input[type="number"] {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+}
+
+.planner-section input[type="checkbox"],
+.planner-section input[type="radio"] {
+  margin-right: 8px;
+}
+
+.custom-place {
+  display: flex;
+  margin-top: 8px;
+}
+
+.custom-place input {
+  flex: 1;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.custom-place button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.custom-place button:hover {
+  background-color: #1e40af;
+}
+
+.planner-container h2 {
+  text-align: center;
+  color: #2563eb;
+}
+
+.planner-container button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.planner-container button:hover {
+  background-color: #1e40af;
+}
+
+.trip-summary {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e0f2fe;
+  border-radius: 10px;
+}
+
+.trip-summary h3 {
+  margin-bottom: 12px;
+  color: #111827;
+}
+@media (max-width: 768px) {
+  .planner-container {
+    max-width: 90%;
+    padding: 20px;
+    margin: 30px auto;
+  }
+
+  .planner-section select,
+  .planner-section input[type="number"] {
+    padding: 6px 10px;
+  }
+
+  .custom-place input {
+    padding: 5px;
+    margin-right: 8px;
+  }
+
+  .custom-place button {
+    padding: 5px 10px;
+  }
+
+  .planner-container button {
+    padding: 10px;
+  }
+
+  .trip-summary {
+    padding: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .planner-container {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .planner-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .planner-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .planner-section label {
+    font-size: 0.9rem;
+  }
+
+  .planner-section select,
+  .planner-section input[type="number"] {
+    font-size: 0.9rem;
+  }
+
+  .custom-place input {
+    font-size: 0.85rem;
+  }
+
+  .custom-place button {
+    font-size: 0.85rem;
+    padding: 4px 8px;
+  }
+
+  .planner-container button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .trip-summary h3 {
+    font-size: 1rem;
+  }
+
+  .trip-summary p {
+    font-size: 0.85rem;
+  }
+}

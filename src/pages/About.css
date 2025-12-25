@@ -1,0 +1,131 @@
+
+.about-page {
+  margin-top: 100px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-hero {
+  text-align: center;
+  background-image: url('about.jpg');
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  padding: 130px 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  height: 270px;
+}
+
+.content-card {
+  background-color: #649ed1;
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.content-card h2 {
+  margin-bottom: 10px;
+}
+
+.content-card p {
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    margin-top: 80px;
+    padding: 20px 15px;
+  }
+
+  .about-hero {
+    padding: 90px 20px;
+    border-radius: 10px;
+  }
+
+  .about-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-hero p {
+    font-size: 0.95rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    height: auto; /* important fix */
+  }
+
+  .content-card {
+    padding: 18px;
+  }
+
+  .content-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .content-card p {
+    font-size: 0.95rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .about-page {
+    margin-top: 90px;
+    padding: 30px 25px;
+  }
+
+  .about-hero {
+    padding: 110px 25px;
+  }
+
+  .about-hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .about-hero p {
+    font-size: 1.05rem;
+  }
+
+  .about-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: auto;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .about-content {
+    height: auto;
+  }
+}
+
